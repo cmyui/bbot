@@ -69,14 +69,14 @@ Presets:
 
 Modules:
   -m MODULE [MODULE ...], --modules MODULE [MODULE ...]
-                        Modules to enable. Choices: sitedossier,crt,postman,ipneighbor,bucket_amazon,baddns_direct,ipstack,extractous,bucket_google,host_header,internetdb,jadx,baddns_zone,bucket_azure,ajaxpro,skymem,censys,postman_download,dockerhub,generic_ssrf,ip2location,gitlab,url_manipulation,paramminer_getparams,builtwith,emailformat,gowitness,github_workflows,bevigil,wayback,subdomaincenter,nuclei,bucket_firebase,bucket_file_enum,badsecrets,httpx,apkpure,leakix,paramminer_headers,chaos,git,filedownload,git_clone,sslcert,virustotal,trufflehog,ffuf,pgp,shodan_dns,certspotter,ntlm,secretsdb,wappalyzer,c99,securitytrails,securitytxt,newsletters,urlscan,dnsdumpster,credshed,baddns,wafw00f,dastardly,azure_tenant,docker_pull,columbus,fullhunt,fingerprintx,hackertarget,github_codesearch,dnsbrute,zoomeye,affiliates,oauth,azure_realm,binaryedge,bufferoverrun,dehashed,dnscaa,dnscommonsrv,myssl,ffuf_shortnames,robots,rapiddns,digitorus,wpscan,hunterio,passivetotal,code_repository,bypass403,vhost,google_playstore,dnsbrute_mutations,anubisdb,viewdns,trickest,portscan,smuggler,iis_shortnames,paramminer_cookies,bucket_digitalocean,dnsbimi,social,otx,github_org,hunt,telerik,subdomainradar,dotnetnuke,asn
+                        Modules to enable. Choices: wappalyzer,ipneighbor,anubisdb,myssl,bevigil,securitytrails,ip2location,wpscan,subdomaincenter,hunterio,bucket_google,google_playstore,bucket_firebase,nuclei,dnscommonsrv,paramminer_getparams,vhost,dnsbrute,git,dnsbimi,code_repository,bucket_file_enum,rapiddns,emailformat,passivetotal,pgp,shodan_dns,iis_shortnames,bucket_amazon,httpx,baddns,oauth,generic_ssrf,digitorus,bucket_digitalocean,dockerhub,gowitness,github_org,ffuf_shortnames,sslcert,fullhunt,columbus,affiliates,smuggler,urlscan,certspotter,git_clone,builtwith,subdomainradar,host_header,badsecrets,github_codesearch,ipstack,ffuf,url_manipulation,dastardly,azure_tenant,secretsdb,bucket_azure,hunt,crt,securitytxt,virustotal,ajaxpro,extractous,credshed,bypass403,telerik,trufflehog,censys,paramminer_cookies,wafw00f,hackertarget,azure_realm,skymem,ntlm,apkpure,chaos,gitlab,internetdb,dehashed,binaryedge,otx,c99,dnsdumpster,zoomeye,postman,newsletters,wayback,leakix,github_workflows,docker_pull,trickest,social,jadx,portscan,asn,bufferoverrun,sitedossier,paramminer_headers,postman_download,dnscaa,filedownload,dotnetnuke,fingerprintx,baddns_zone,viewdns,dnsbrute_mutations,robots,baddns_direct
   -l, --list-modules    List available modules.
   -lmo, --list-module-options
                         Show all module config options
   -em MODULE [MODULE ...], --exclude-modules MODULE [MODULE ...]
                         Exclude these modules.
   -f FLAG [FLAG ...], --flags FLAG [FLAG ...]
-                        Enable modules by flag. Choices: email-enum,affiliates,web-screenshots,subdomain-hijack,baddns,portscan,iis-shortnames,safe,web-thorough,active,cloud-enum,web-basic,passive,report,code-enum,subdomain-enum,slow,aggressive,social-enum,deadly,web-paramminer,service-enum
+                        Enable modules by flag. Choices: social-enum,service-enum,portscan,iis-shortnames,code-enum,web-thorough,report,passive,deadly,cloud-enum,safe,subdomain-enum,affiliates,web-screenshots,email-enum,baddns,aggressive,web-basic,active,slow,subdomain-hijack,web-paramminer
   -lf, --list-flags     List available flags.
   -rf FLAG [FLAG ...], --require-flags FLAG [FLAG ...]
                         Only enable modules with these flags (e.g. -rf passive)
@@ -101,7 +101,7 @@ Output:
   -o DIR, --output-dir DIR
                         Directory to output scan results
   -om MODULE [MODULE ...], --output-modules MODULE [MODULE ...]
-                        Output module(s). Choices: asset_inventory,discord,python,slack,http,json,web_report,teams,subdomains,emails,websocket,sqlite,txt,csv,stdout,neo4j,splunk
+                        Output module(s). Choices: web_report,sqlite,emails,teams,txt,python,discord,csv,neo4j,json,stdout,slack,http,subdomains,splunk,websocket,asset_inventory
   --json, -j            Output scan data in JSON format
   --brief, -br          Output only the data itself
   --event-types EVENT_TYPES [EVENT_TYPES ...]
